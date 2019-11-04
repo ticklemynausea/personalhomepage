@@ -8,7 +8,6 @@ In the spirit of learning more about circuits and electronics I made a few exper
 
 This one is quite simple, as it cycles 5 leds on/off periodically.
 
-
 {% include youtube.html id="2wyFodNcwwM" %}
 
 {% include gist.html id="ticklemynausea/d980b6c9f10d01f062ed" %}
