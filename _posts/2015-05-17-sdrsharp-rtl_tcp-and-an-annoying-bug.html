@@ -1,0 +1,112 @@
+---
+layout: post
+status: publish
+published: true
+title: SDRSharp, rtl_tcp and fixing a very annoying freeze bug
+author:
+  display_name: mário
+  login: nausea
+  email: emailoftheyear@gmail.com
+  url: ''
+author_login: nausea
+author_email: emailoftheyear@gmail.com
+wordpress_id: 290
+wordpress_url: https://nausea.io/?p=290
+date: '2015-05-17 14:29:53 +0100'
+date_gmt: '2015-05-17 14:29:53 +0100'
+categories:
+- SD RADIO
+tags:
+- rtlsdr
+- rtl_tcp
+- olinuxino
+- sdr
+- usb
+- glitch
+comments:
+- id: 23
+  author: David
+  author_email: sm3ulc@gmail.com
+  author_url: ''
+  date: '2015-05-31 09:02:05 +0100'
+  date_gmt: '2015-05-31 09:02:05 +0100'
+  content: I have tha exact same problem and it has been consistant for all the years
+    I've been using SDRSharp. SDR-Console never ever hangs.. I've run the dongles
+    and client on a lot of different hardware both low and hi-performance. SDRSharp
+    still hangs. Played with buffer-settings on rtl_tcp. No conclusive results. Frustrating
+    it is.
+- id: 24
+  author: m&aacute;rio
+  author_email: emailoftheyear@gmail.com
+  author_url: ''
+  date: '2015-06-01 09:29:53 +0100'
+  date_gmt: '2015-06-01 09:29:53 +0100'
+  content: |-
+    Hi
+
+    I could not get any conclusive results but to me this seems to be a bug on the networking part of the rtl_tcp client SDRSharp provides. I've noticed that the more I lowered the sample rate (thus lowering the network bandwidth used) the less often this problem happens. SDRSharper seems to have fixed it for good though. Give it a try.
+- id: 25
+  author: Michele
+  author_email: costantino.michele@gmail.com
+  author_url: ''
+  date: '2015-06-02 10:32:15 +0100'
+  date_gmt: '2015-06-02 10:32:15 +0100'
+  content: "Give a try...\r\n\r\nhttp://michelinok76.blogspot.it/2015/05/sdrsharp-rtltcp-bug-solved.html"
+- id: 26
+  author: michele
+  author_email: costantino.michele@gmail.com
+  author_url: ''
+  date: '2015-06-03 10:39:50 +0100'
+  date_gmt: '2015-06-03 10:39:50 +0100'
+  content: "I solved the problem...\r\n\r\nhttp://michelinok76.blogspot.it/2015/05/sdrsharp-rtltcp-bug-solved.html"
+---
+<p>rtl_tcp is a very convenient way to enjoy <a href="http://www.rtl-sdr.com/about-rtl-sdr/">rtl-sdr</a>. If your workstation isn't located anywhere near where you'd like to have your antenna, then you might consider connecting your dongle to a nearer&nbsp;machine and let your network handle the rest. My current setup has my Discone antenna on the other side of the house, connected to a dongle with a very short cable to cut signal losses and a USB cable all the way inside, connecting to my <a href="https://www.olimex.com/wiki/A20-OLinuXino-MICRO">Olimex Olinuxino A20 Micro</a>. Previously I used a Raspberry PI Model B and it also worked fine. So, boot up your low power machine, run rtl_tcp and connect to it using your software of choice. SDRSharp supports rtl_tcp out of the box with SDRSharp.RTLTCP.dll.</p>
+<p>[su_accordion]<br />
+[su_spoiler title="RTLSDR Setup" style="fancy"]</p>
+<p>[gallery link="file" ids="294,296,295"]<br />
+[/su_spoiler]<br />
+[/su_accordion]</p>
+<p>I've used the word fine in the text above... Well, all of this is fine with the exception of a very annoying freeze bug. Everyone who uses rtl_tcp has seen something like this at least once (video below). I couldn't&nbsp;really say what caused this but I suspected the fault was that rtl_tcp was running in a Raspberry PI, which isn't known for being very fast. I was disappointed when I saw that the bug persisted when running rtl_tcp in my Olinuxino. I noticed that lowering the sample rate at which SDRSharp ran made the freeze bug happen less often, so I could at least get by for a while in most cases.</p>
+<p>[su_accordion]<br />
+[su_spoiler title="Video" style="fancy"]</p>
+<p>[su_youtube_advanced url="//www.youtube.com/watch?v=zy48eE7AYtA" https="yes"]</p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong>warning: keep your volume low, as the crash is loud</strong></span></p>
+<p>[/su_spoiler]<br />
+[/su_accordion]</p>
+<p><a href="http://www.rtl-sdr.com/sdrsharper-modified-version-sdr/">Earlier this year a fork of SDRSharp saw the light of day, named SDRSharper</a>. It is a reskinned version with an improved layout and with added features.&nbsp;The thing is, SDRSharper heavily violated SDRSharp's license, so,&nbsp;just a few hours after it was released, rtl-sdr.com took down every link in the original article. I was lucky enough to download it and although I found it quite a bit unpleasant to look at, I was very surprised to see that the&nbsp;goddamn freezing glitch which in a good day happened once just every few minutes wasn't happening at all. The freeze bug seems to be in fact a problem in the SDRSharp RTL TCP driver (SDRSharp.RTLTCP.dll). <strong>SDRSharper fixes this really annoying bug,&nbsp;something that SDRSharp has yet to do.</strong></p>
+<p>[su_accordion]<br />
+[su_spoiler title="SDRSharper and SRSharp side to side" style="fancy"]<br />
+<a href="/wp-content/uploads/2015/05/Screenshot_1.png"><img class="alignnone size-medium wp-image-310" src="/wp-content/uploads/2015/05/Screenshot_1-300x169.png" alt="SDRSharper" width="300" height="169" /></a> <a href="/wp-content/uploads/2015/05/Screenshot_2.png"><img class="alignnone size-medium wp-image-311" src="/wp-content/uploads/2015/05/Screenshot_2-300x169.png" alt="SDRSharp" width="300" height="169" /></a><br />
+[/su_spoiler]<br />
+[/su_accordion]</p>
+<p>[su_accordion]<br />
+[su_spoiler title="SDRSharper RTL TCP" style="fancy"]</p>
+<p>[gallery size="full" ids="298,346"]<br />
+The configuration dialog for SDRSharper's driver&nbsp;is different from SDRSharp's. It doesn't offer the RTL AGC option, just a choice between manual gain and auto gain which seems to be for RF Gain. This time, the gain setting accepts any value via keyboard input. I prefered the slider, which&nbsp;lets you choose between the supported gain values your dongle has (see <strong>rtl_test</strong>). I'm not sure if this really lets you chose an arbitrary gain value. Another issue that bothers me is that this dialog will lose your settings every time you close SDRSharp(er)[/su_spoiler]<br />
+[/su_accordion]</p>
+<p>[su_accordion class="do-not-open"]<br />
+[su_spoiler title="rtl_test" style="fancy"]</p>
+<p>[code]<br />
+$ rtl_test<br />
+Found 1 device(s):<br />
+ 0: Realtek, RTL2838UHIDIR, SN: 00000001</p>
+<p>Using device 0: Generic RTL2832U OEM<br />
+Found Rafael Micro R820T tuner<br />
+Supported gain values (29): 0.0 0.9 1.4 2.7 3.7 7.7 8.7 12.5 14.4 15.7 16.6 19.7 20.7 22.9 25.4 28.0 29.7 32.8 33.8 36.4 37.2 38.6 40.2 42.1 43.4 43.9 44.5 48.0 49.6<br />
+Sampling at 2048000 S/s.</p>
+<p>Info: This tool will continuously read from the device, and report if<br />
+samples get lost. If you observe no further output, everything is fine.</p>
+<p>Reading samples in async mode...</p>
+<p>[/code]</p>
+<p>[/su_spoiler]<br />
+[/su_accordion]</p>
+<p>SDRSharper looks a bit off in my opinion but overall it's not so bad. While SDRSharper's look is a bit off-throwing, the good news is that you can replace SDRSharp's version of&nbsp;SDRSharp.RTLTCP.dll with SDRSharper's. It works perfectly well except with the issues I detailed above. Beware, though, as&nbsp;licensing issues make it illegal to distribute SDRSharper.</p>
+<p>A few questions&nbsp;remain in my mind. What causes, exactly, this freezing glitch? And why is a critical issue&nbsp;like is this (I believe rtl_tcp is very relevant to a lot of SDRSharp users) fixed in a license violating fork of SDRSharp, but not yet in the official release of SDRSharp? And finally, does the gain setting in the new SDRSharp RTL TCP driver really work outside of the supported gain values <strong>rtl_test</strong> shows?</p>
+<p>I'll update this if I find anything alse after I do some more research on SDRSharper and its RTL TCP driver.</p>
+<p><script type="text/javascript">// <![CDATA[<br />
+jQuery(function() {<br />
+    setTimeout(function() {<br />
+      jQuery(".su-accordion:not(.do-not-open) .su-spoiler-title").click()<br />
+    });<br />
+});<br />
+// ]]></script></p>

@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: Adventures with Software Defined Radio
+author:
+  display_name: mário
+  login: nausea
+  email: emailoftheyear@gmail.com
+  url: ''
+author_login: nausea
+author_email: emailoftheyear@gmail.com
+wordpress_id: 10
+wordpress_url: https://nausea.io/?p=10
+date: '2013-11-14 16:17:33 +0000'
+date_gmt: '2013-11-14 16:17:33 +0000'
+categories:
+- SD RADIO
+tags:
+- rtlsdr
+- antenna
+- Raspberry PI
+comments: []
+---
+<p>A&nbsp;well known hack with DVB-T dongles based on the Realtek&nbsp;RTL2832U chip is that they may be used for more interesting purpose than watching the four free television channels we have here in Portugal: a really, really cheap software defined radio. This is known as <em>RTLSDR</em>.</p>
+<p>I really liked the idea of tinkering around with this, so I purchased an <a href="http://www.ebay.com/sch/i.html?_nkw=ezcap+dvb-t&amp;_sacat=0">ezcap USB 2.0 DVB-T/DAB/FM </a>dongle from ebay for under 10&euro;. It's always a gamble since you don't know which tuner your dvb dongle will use, but luckily mine is a&nbsp;Rafael Micro R820T, which&nbsp;<a style="font-size: 16px; line-height: 1.5;" href="http://sdr.osmocom.org/trac/wiki/rtl-sdr">supports a whopping 24 - 1766 MHz</a>.</p>
+<p>The&nbsp;antenna that is bundled with the dongle sucks. It didn't do much for me besides picking up standard FM radio. In some conditions it even failed to do what it was built for: picking up DVB-T. Soon it became clear that I needed a better antenna if I was thinking of going anywhere. Some research taught me&nbsp;that there are dozens of types of antennas, each with their intended purposes. For example, the <a href="http://www.g4ilo.com/qfh.html"><em>QFH antenna</em></a>&nbsp;is ideal for picking up satellite and aircraft signals. There's also <em>discone antennas</em>, exceptionally wideband antennas that are fit for many different purposes.&nbsp;I did consider building one, but since I'm not very crafty I ended up&nbsp;<a href="http://www.rms.pt/p/69/discone-d1000ph">ordering it</a>.</p>
+<p>This antenna supports a whopping 25 to 1300 MHz range. In theory, this lets me play&nbsp;with a lot of stuff&nbsp;there is out there in the airspace, digital and analog communications like trunked radio, packet radio and aircraft communications. It will be useless for shortwave radio though, which is pretty interesting. But this is sort of a moot point since the range of the RTLSDR dongle is a almost&nbsp;out of the shortwave range (about 3 to 30 MHz). It's nice that&nbsp;the&nbsp;range of frequencies the dongle covers isn't limited by the range of frequencies the antenna picks up, but this doesn't mean it will pick up everything with&nbsp;quality because Discone antennas are good at picking up vertically polarized radio signals.</p>
+<h2>Galleries</h2>
+<p>[su_accordion]<br />
+[su_spoiler title="Packaged Antenna" style="fancy"]</p>
+<p>[gallery columns="2" ids="19,18,20"]</p>
+<p>[/su_spoiler]<br />
+[su_spoiler title="Mounting the antenna" style="fancy"]</p>
+<p>[gallery columns="2" ids="16,17,15,12,11"]</p>
+<p>[/su_spoiler]<br />
+[/su_accordion]</p>
+<p>The antenna works best when outside, so I had to improvise a little.&nbsp;Pulling cable from the antenna to my computer&nbsp;was not a possibility, so I just the plugged the dongle into a&nbsp;Raspberry Pi, and plugged the Pi into my network. Although it is a bit slower than a direct USB connection, it&nbsp;performs quite well in its SDR duties (using <a href="http://sdr.osmocom.org/trac/wiki/rtl-sdr">rtl_tcp</a>&nbsp;as a server and <a href="http://sdrsharp.com/">sdr#</a>&nbsp;as a client).</p>
+<p>I'll leave the results of my&nbsp;tinkering to future posts, but here's a little&nbsp;something I picked up, probably an ham radio or truck driver expressing his love for Portuguese cuisine. I can't blame him, it's a really good dish.</p>
+<p>[su_box title=""]</p>
+<p><a href="/wp-content/uploads/2013/11/roj&otilde;es-&agrave;-moda-do-Minho.jpg"><img class="size-full wp-image-136 aligncenter" src="/wp-content/uploads/2013/11/roj&otilde;es-&agrave;-moda-do-Minho.jpg" alt="roj&otilde;es-&agrave;-moda-do-Minho" width="250" height="188" /></a></p>
+<p>[audio ogg="/wp-content/uploads/2013/11/Roj&otilde;es-&agrave;-moda-do-minho.ogg"][/audio]</p>
+<p>[/su_box]</p>
+<p>Also, I used the word dongle a lot in this article.</p>
+<p>lol dongles ;-)</p>
