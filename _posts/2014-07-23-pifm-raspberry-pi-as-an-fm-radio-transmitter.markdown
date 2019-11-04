@@ -8,11 +8,7 @@ I tried out the awesome raspberry pi fm transmitter hack and made a video of it.
 
 It's quite simple. The only requirement is a random piece of wire connected to GPIO pin no&ordm; 7 to serve as an antenna. I used regular wire connected to a jumper that fits on the GPIO pin. The software used is of course open source <i class="fa fa-heart"></i>. I used a lenght of about 70cm but&nbsp;you can optimize the length based on the frequency you're transmitting to achieve maximum reach. Beware though, as unlicensed transmissions are illegal.
 
-[su_accordion]
-[su_spoiler title="Video" style="fancy"]
-[su_youtube_advanced url="//www.youtube.com/watch?v=HWuNODzZBx0" https="yes"]
-[/su_spoiler]
-[/su_accordion]
+{% include youtube.html id="HWuNODzZBx0" %}
 
 I tested the transmission using the FM radio receiver on an old mp3 player and my RTLSDR setup, with the receiving&nbsp;antenna a good 15m away from the&nbsp;transmitting antenna. Quite a good reach for a random piece of wire.
 

@@ -15,15 +15,9 @@ rtl_tcp is a very convenient way to enjoy <a href="http://www.rtl-sdr.com/about-
 
 I've used the word fine in the text above... Well, all of this is fine with the exception of a very annoying freeze bug. Everyone who uses rtl_tcp has seen something like this at least once (video below). I couldn't really say what caused this but I suspected the fault was that rtl_tcp was running in a Raspberry PI, which isn't known for being very fast. I was disappointed when I saw that the bug persisted when running rtl_tcp in my Olinuxino. I noticed that lowering the sample rate at which SDRSharp ran made the freeze bug happen less often, so I could at least get by for a while in most cases.
 
-[su_accordion]
-[su_spoiler title="Video" style="fancy"]
-
-[su_youtube_advanced url="//www.youtube.com/watch?v=zy48eE7AYtA" https="yes"]
+{% include youtube.html id="zy48eE7AYtA" %}
 
 <span style="color: #ff0000;">**warning: keep your volume low, as the crash is loud**</span>
-
-[/su_spoiler]
-[/su_accordion]
 
 <a href="http://www.rtl-sdr.com/sdrsharper-modified-version-sdr/">Earlier this year a fork of SDRSharp saw the light of day, named SDRSharper</a>. It is a reskinned version with an improved layout and with added features. The thing is, SDRSharper heavily violated SDRSharp's license, so, just a few hours after it was released, rtl-sdr.com took down every link in the original article. I was lucky enough to download it and although I found it quite a bit unpleasant to look at, I was very surprised to see that the goddamn freezing glitch which in a good day happened once just every few minutes wasn't happening at all. The freeze bug seems to be in fact a problem in the SDRSharp RTL TCP driver (SDRSharp.RTLTCP.dll). **SDRSharper fixes this really annoying bug, something that SDRSharp has yet to do.**
 

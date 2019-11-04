@@ -8,14 +8,5 @@ Conway's <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of 
 
 <a title="Github Repo" href="https://github.com/ticklemynausea/lcd5510-game-of-life">Source code @ GitHub</a>
 
-[su_accordion]
-[su_spoiler title="Pics" style="fancy"]
 
-[gallery link="file" ids="254,255,256"]
-[/su_spoiler]
-[/su_accordion]
-[su_accordion]
-[su_spoiler title="Video" style="fancy"]
-[su_youtube_advanced url="//www.youtube.com/watch?v=Wo4l_F5Bznw" https="yes"]
-[/su_spoiler]
-[/su_accordion]
+{% include youtube.html id="Wo4l_F5Bznw" %}
