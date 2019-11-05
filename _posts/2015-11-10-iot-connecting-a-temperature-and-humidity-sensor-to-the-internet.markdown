@@ -6,9 +6,13 @@ date: '2015-11-10 19:21:21 +0000'
 
 Wonderful! I've now made a thing which is officially a part of the so-called "Internet of Things". It even has some practical use, I could argue! I connected a cheap <a href="http://files.amperka.ru/datasheets/dht11.pdf">DHT11</a> temperature/humidity sensor to an Arduino Nano and used the wonderful <a href="http://makezine.com/2015/04/01/esp8266-5-microcontroller-wi-fi-now-arduino-compatible/">ESP8266</a> (ESP-01) device to enable the Arduino to talk to the Internet, posting their readings on the <a href="https://thingspeak.com/">ThingSpeak</a> platform. They even let you make widgets with your charts and put them on your own site!
 
-<iframe style="display: block; margin: auto; border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/56753/charts/1?width=450&amp;height=260&amp;results=60&amp;dynamic=true&amp;title=Humidity" width="450" height="260"></iframe>
+<p>
+  <iframe style="display: block; margin: auto; border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/56753/charts/1?width=450&amp;height=260&amp;results=60&amp;dynamic=true&amp;title=Humidity" width="450" height="260"></iframe>
+</p>
 
-<iframe style="display: block; margin: auto; border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/56753/charts/2?width=450&amp;height=260&amp;results=60&amp;dynamic=true&amp;title=Temperature" width="450" height="260"></iframe>
+<p>
+  <iframe style="display: block; margin: auto; border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/56753/charts/2?width=450&amp;height=260&amp;results=60&amp;dynamic=true&amp;title=Temperature" width="450" height="260"></iframe>
+</p>
 
 There are many ways to achieve this, but in all of them Serial communication between the Arduino and the ESP8266 is somehow involved. For example, <a href="https://github.com/esp8266/Arduino">the ESP8266 is compatible with the Arduino IDE</a>, so you can program it just like an Arduino. You could load in it a very simple program that posted to the internet values read from a Serial port. In fact, for this particular practical purpose I could use the ESP01 alone (connecting the sensor to one of the two ESP-01 GPIOs), but I chose to do this as an exercise to make the arduino Internet-capable. Since my ESP-01 modules have come from a bad batch with what I guess is a faulty memory chip, it makes it very hard to program them sometimes (because of random errors while flashing). So I just decided to stick with the standard serial AT commands firmware so I only have to flash the device once. The AT serial interface is not pretty at all, but it works very well!
 
