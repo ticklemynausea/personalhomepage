@@ -37,7 +37,7 @@ The configuration dialog for SDRSharper's driver is different from SDRSharp's. I
 [su_accordion class="do-not-open"]
 [su_spoiler title="rtl_test" style="fancy"]
 
-<pre>
+```
 $ rtl_test
 Found 1 device(s):
  0: Realtek, RTL2838UHIDIR, SN: 00000001
@@ -52,7 +52,7 @@ samples get lost. If you observe no further output, everything is fine.
 
 Reading samples in async mode...
 
-</pre>
+```
 
 [/su_spoiler]
 [/su_accordion]
