@@ -2,6 +2,26 @@
 layout: post
 title: Adventures with Software Defined Radio
 date: '2013-11-14 16:17:33 +0000'
+gallery:
+  packaged-antenna:
+    title: Packaged antenna
+    items:
+    - file: 2013-10-28-13.05.10.jpg
+    - file: 2013-10-28-13.09.10.jpg
+    - file: 2013-10-28-18.38.12.jpg
+  mounting-antenna:
+    title: Mounting the antenna
+    items:
+    - file: 2013-11-14-09.05.39.jpg
+    - file: 2013-11-14-09.05.48.jpg
+    - file: 2013-11-14-13.49.46.jpg
+    - file: 2013-11-14-13.50.58.jpg
+    - file: 2013-11-14-13.51.03.jpg
+  rojoes:
+    - file: rojões-à-moda-do-Minho.jpg
+    - file: rojões-à-moda-do-Minho.ogg
+      type: audio
+
 ---
 
 A well known hack with DVB-T dongles based on the Realtek RTL2832U chip is that they may be used for more interesting purpose than watching the four free television channels we have here in Portugal: a really, really cheap software defined radio. This is known as *RTLSDR*.
@@ -12,33 +32,18 @@ The antenna that is bundled with the dongle sucks. It didn't do much for me besi
 
 This antenna supports a whopping 25 to 1300 MHz range. In theory, this lets me play with a lot of stuff there is out there in the airspace, digital and analog communications like trunked radio, packet radio and aircraft communications. It will be useless for shortwave radio though, which is pretty interesting. But this is sort of a moot point since the range of the RTLSDR dongle is a almost out of the shortwave range (about 3 to 30 MHz). It's nice that the range of frequencies the dongle covers isn't limited by the range of frequencies the antenna picks up, but this doesn't mean it will pick up everything with quality because Discone antennas are good at picking up vertically polarized radio signals.
 
-<h2>Galleries</h2>
-[su_accordion]
-[su_spoiler title="Packaged Antenna" style="fancy"]
+{% gallery packaged-antenna %}
 
-[gallery columns="2" ids="19,18,20"]
+{% gallery mounting-antenna %}
 
-[/su_spoiler]
-[su_spoiler title="Mounting the antenna" style="fancy"]
-
-[gallery columns="2" ids="16,17,15,12,11"]
-
-[/su_spoiler]
-[/su_accordion]
 
 The antenna works best when outside, so I had to improvise a little. Pulling cable from the antenna to my computer was not a possibility, so I just the plugged the dongle into a Raspberry Pi, and plugged the Pi into my network. Although it is a bit slower than a direct USB connection, it performs quite well in its SDR duties (using <a href="http://sdr.osmocom.org/trac/wiki/rtl-sdr">rtl_tcp</a> as a server and <a href="http://sdrsharp.com/">sdr#</a> as a client).
 
 I'll leave the results of my tinkering to future posts, but here's a little something I picked up, probably an ham radio or truck driver expressing his love for Portuguese cuisine. I can't blame him, it's a really good dish.
 
-[su_box title=""]
-
-<a href="/wp-content/uploads/2013/11/roj&otilde;es-&agrave;-moda-do-Minho.jpg"><img class="size-full wp-image-136 aligncenter" src="/wp-content/uploads/2013/11/roj&otilde;es-&agrave;-moda-do-Minho.jpg" alt="roj&otilde;es-&agrave;-moda-do-Minho" width="250" height="188" /></a>
-
-[audio ogg="/wp-content/uploads/2013/11/Roj&otilde;es-&agrave;-moda-do-minho.ogg"][/audio]
-
-[/su_box]
+{% gallery rojoes %}
 
 Also, I used the word dongle a lot in this article.
 
-lol dongles ;-)
+`lol dongles ;-)`
 

@@ -2,6 +2,12 @@
 layout: post
 title: IPv6 in your home via tunnel broker
 date: '2014-06-03 00:48:18 +0100'
+gallery:
+  wireshark:
+    - file: ipv6ra.png
+  certification:
+    - file: sage.png
+    - file: sage1.png
 ---
 
 Recently I parted ways with my ISP while they were too busy making bickering commercials to listen to my complaints. I joined a competitor with a very promising fiber service for our standards: <a href="http://www.vodafone.pt/">Vodafone</a>. With the switch, I got an upgrade to my old Thomson TG784n to a way better looking Technicolor TG784n v3 and with a newer firmware and loads more available documentation. It was some new documentation I came across that made me finally get around to do something I wanted. So here's a quick little guide on how to configure IPv6 with proper internet connectivy for your home network via an IPv6 tunnel broker. I use <a href="http://he.net/">hurricane electric</a>'s <a title="tunnelbroker.net" href="https://tunnelbroker.net/">tunnelbroker.net</a>, but there are a few other alternatives you can use with this guide. This guide should also work fine for the Thomson TG784n. This guide presumes of course that you have already created an account with your tunnel broker and created and configured a tunnel with your internet connection as an endpoint. So since you've already registered and created a regular tunnel, you must have the following information at hand to proceed:
@@ -88,7 +94,7 @@ With this you should be able to ping both IPv6 addresses of your tunnel. At this
 
 You can check out these advertisements being sent using Wireshark:
 
-[gallery ids="159"]
+{% gallery wireshark %}
 
 Lastly, the command:
 
@@ -100,7 +106,7 @@ Will show you information on the status of the router advertisement. The NextRA 
 
 IPv6 is indeed the future, but the certification badges he.net gives you to brag about sure look like a blast from the past:
 
-[gallery ids="164,163"]
+{% gallery certification %}
 
 * <a href="http://community.plus.net/forum/index.php?topic=106578.0">6in4 IPv6 Tunnel natively on Technicolor TG582n</a>
 * <a href="http://strugglers.net/~andy/blog/2011/09/04/linux-ipv6-router-advertisements-and-forwarding/">Linux, IPv6, router advertisements and forwarding</a>

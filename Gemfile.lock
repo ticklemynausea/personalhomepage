@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    byebug (11.0.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
     em-websocket (0.5.1)
@@ -73,6 +74,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   jekyll (~> 4.0.0)
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
