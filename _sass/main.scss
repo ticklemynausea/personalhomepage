@@ -1,0 +1,143 @@
+$color1: #F8F8F8;
+$color2: #1B1B1B;
+$color3: #274C77;
+$color4: #16BAC5;
+$color5: #5FBFF9;
+
+$background-color: $color1;
+$foreground-color: $color2;
+$title-color: $color3;
+$link-color: $color4;
+$hilight-color: $color5;
+$hr-color: lighten($color2, 70%);
+
+$font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+$content-width: calc(100% / 1.618);
+
+body {
+  background-color: $background-color;
+  color: $foreground-color;
+  font-family: $font;
+  margin: 8px;
+  overflow: hidden scroll;
+}
+
+h1, h2, h3, h4 {
+  color: $title-color;
+  font-weight: bold;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.87em 0 0.87em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0 1em 0;
+}
+
+h4 {
+  font-size: 1.10em;
+  margin: 1.33em 0 1.33em 0;
+}
+
+p {
+  margin: 1em 0 1em 0;
+  line-height: 1.25em;
+  word-break: break-word;
+}
+
+a {
+  color: $link-color;
+}
+
+mark {
+  color: $hilight-color;
+  background: none;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre-wrap;
+  margin: 1em;
+
+  &.inline {
+    display: inline;
+    margin: 0;
+    word-break: break-all;
+  }
+}
+
+span.pre {
+  font-family: monospace;
+
+  &.inline {
+    word-break: break-all;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+header {
+  margin-top: 3em;
+}
+
+footer {
+  width: $content-width;
+  margin: 3em auto 3em auto;
+  text-align: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li:not(:first-child) {
+    }
+
+    li:not(:last-child) {
+      &:after {
+        content: "|";
+        margin: 0 .2em 0 0;
+      }
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  border: none;
+  color: $hr-color;
+  background-color: $hr-color;
+  margin: 2em 0 2em 0;
+}
+
+main {
+  margin: auto;
+  width: $content-width;
+  margin: auto;
+}
+
+div.home {
+  article {
+    margin: 3em 0 3em 0;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  main, header, footer {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+.blog {
+  .blog--content {
+    margin: 1em 0 3em 0;
+  }
+
+  ul.blog--post-list  {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin: 1em 0 1em 0;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.post {
+  .post--header {
+    margin-bottom: 1em;
+
+    .post--header--meta {
+      font-weight: bold;
+    }
+  }
+
+  .post--content {
+    ul {
+      line-height: 1.25em;
+
+      li {
+        margin: 0.5em 0 0.5em 0;
+
+        &:before {
+          content: "–";
+          margin: 0 0.5em 0 0.5em;
+        }
+      }
+    }
+  }
+
+  .post--footer {
+    margin: 3em 0 1em 0;
+    text-align: right;
+  }
+}

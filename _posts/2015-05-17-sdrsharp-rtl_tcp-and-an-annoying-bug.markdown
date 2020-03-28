@@ -2,16 +2,18 @@
 layout: post
 title: SDRSharp, rtl_tcp and fixing a very annoying freeze bug
 date: '2015-05-17 14:29:53 +0100'
----
+gallery:
+  setup:
+    items:
+      - file: IMG_20150517_140604-e1431871976204.jpg
+      - file: IMG_20150517_140528.jpg
+      - file: IMG_20150517_150412.jpg
+    classnames:
+      - grid-3
 
 rtl_tcp is a very convenient way to enjoy <a href="http://www.rtl-sdr.com/about-rtl-sdr/">rtl-sdr</a>. If your workstation isn't located anywhere near where you'd like to have your antenna, then you might consider connecting your dongle to a nearer machine and let your network handle the rest. My current setup has my Discone antenna on the other side of the house, connected to a dongle with a very short cable to cut signal losses and a USB cable all the way inside, connecting to my <a href="https://www.olimex.com/wiki/A20-OLinuXino-MICRO">Olimex Olinuxino A20 Micro</a>. Previously I used a Raspberry PI Model B and it also worked fine. So, boot up your low power machine, run rtl_tcp and connect to it using your software of choice. SDRSharp supports rtl_tcp out of the box with SDRSharp.RTLTCP.dll.
 
-[su_accordion]
-[su_spoiler title="RTLSDR Setup" style="fancy"]
-
-[gallery link="file" ids="294,296,295"]
-[/su_spoiler]
-[/su_accordion]
+{% gallery setup %}
 
 I've used the word fine in the text above... Well, all of this is fine with the exception of a very annoying freeze bug. Everyone who uses rtl_tcp has seen something like this at least once (video below). I couldn't really say what caused this but I suspected the fault was that rtl_tcp was running in a Raspberry PI, which isn't known for being very fast. I was disappointed when I saw that the bug persisted when running rtl_tcp in my Olinuxino. I noticed that lowering the sample rate at which SDRSharp ran made the freeze bug happen less often, so I could at least get by for a while in most cases.
 

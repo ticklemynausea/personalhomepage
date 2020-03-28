@@ -9,18 +9,28 @@ gallery:
     - file: 2013-10-28-13.05.10.jpg
     - file: 2013-10-28-13.09.10.jpg
     - file: 2013-10-28-18.38.12.jpg
+    classnames:
+    - grid-3
   mounting-antenna:
     title: Mounting the antenna
     items:
-    - file: 2013-11-14-09.05.39.jpg
-    - file: 2013-11-14-09.05.48.jpg
-    - file: 2013-11-14-13.49.46.jpg
-    - file: 2013-11-14-13.50.58.jpg
-    - file: 2013-11-14-13.51.03.jpg
+      - file: 2013-11-14-09.05.39.jpg
+      - file: 2013-11-14-09.05.48.jpg
+      - file: 2013-11-14-13.49.46.jpg
+      - file: 2013-11-14-13.50.58.jpg
+      - file: 2013-11-14-13.51.03.jpg
+    classnames:
+      - grid-3
   rojoes:
-    - file: rojões-à-moda-do-Minho.jpg
-    - file: rojões-à-moda-do-Minho.ogg
-      type: audio
+    items:
+      - file: rojões-à-moda-do-Minho.jpg
+      - file: rojões-à-moda-do-Minho.ogg
+        type: audio
+    classnames:
+      - grid-2
+      - grid-align-left
+
+
 
 ---
 

@@ -5,33 +5,39 @@ module Jekyll
     def render(context)
       @context = context
 
-      items, title = if gallery.is_a?(Hash)
-        [gallery["items"], gallery["title"]]
+      items, title, classnames = if gallery.is_a?(Hash)
+        [gallery["items"], gallery["title"], gallery["classnames"]]
       else
-        [gallery, nil]
+        [gallery, nil, nil]
       end
 
+      classnamess = ["gallery"].concat(classnames || ["grid-1"]).join(" ")
+
       <<~HTML
-        <div class="gallery">
-          #{if title then "<h3>#{title}</h3>" else nil end}
+        <div class="#{classnamess}">
+          #{if title then "<div class=\"gallery--title\"><h3>#{title}</h3></div>" else nil end}
           #{render_items(items)}
         </div>
       HTML
     end
 
     def render_items(items)
-      items.map do |item|
+      content = items.map do |item|
+        title = "<h4> #{item["title"]}</h4>" if item["title"]
+
         <<~HTML
-          <div class="gallery__item">
-            <h4>
-              #{item["title"]}
-            </h4>
-            <p>
-              #{gallery_item(item)}
-            </p>
+          <div class="gallery--item">
+            #{title}
+            #{gallery_item(item)}
           </div>
         HTML
       end.join
+
+      <<~HTML
+        <div class="gallery--content">
+          #{content}
+        </div>
+      HTML
     end
 
     private
