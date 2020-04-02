@@ -10,6 +10,13 @@ gallery:
       - file: IMG_20150517_150412.jpg
     classnames:
       - grid-3
+  sdrsharper:
+    items:
+      - file: rtl_tcp_SDRSharper.png
+      - file: rtltcp1.jpg
+    classnames:
+      - grid-2
+---
 
 rtl_tcp is a very convenient way to enjoy <a href="http://www.rtl-sdr.com/about-rtl-sdr/">rtl-sdr</a>. If your workstation isn't located anywhere near where you'd like to have your antenna, then you might consider connecting your dongle to a nearer machine and let your network handle the rest. My current setup has my Discone antenna on the other side of the house, connected to a dongle with a very short cable to cut signal losses and a USB cable all the way inside, connecting to my <a href="https://www.olimex.com/wiki/A20-OLinuXino-MICRO">Olimex Olinuxino A20 Micro</a>. Previously I used a Raspberry PI Model B and it also worked fine. So, boot up your low power machine, run rtl_tcp and connect to it using your software of choice. SDRSharp supports rtl_tcp out of the box with SDRSharp.RTLTCP.dll.
 
@@ -23,21 +30,9 @@ I've used the word fine in the text above... Well, all of this is fine with the 
 
 <a href="http://www.rtl-sdr.com/sdrsharper-modified-version-sdr/">Earlier this year a fork of SDRSharp saw the light of day, named SDRSharper</a>. It is a reskinned version with an improved layout and with added features. The thing is, SDRSharper heavily violated SDRSharp's license, so, just a few hours after it was released, rtl-sdr.com took down every link in the original article. I was lucky enough to download it and although I found it quite a bit unpleasant to look at, I was very surprised to see that the goddamn freezing glitch which in a good day happened once just every few minutes wasn't happening at all. The freeze bug seems to be in fact a problem in the SDRSharp RTL TCP driver (SDRSharp.RTLTCP.dll). **SDRSharper fixes this really annoying bug, something that SDRSharp has yet to do.**
 
-[su_accordion]
-[su_spoiler title="SDRSharper and SRSharp side to side" style="fancy"]
-<a href="/wp-content/uploads/2015/05/Screenshot_1.png"><img class="alignnone size-medium wp-image-310" src="/wp-content/uploads/2015/05/Screenshot_1-300x169.png" alt="SDRSharper" width="300" height="169" /></a> <a href="/wp-content/uploads/2015/05/Screenshot_2.png"><img class="alignnone size-medium wp-image-311" src="/wp-content/uploads/2015/05/Screenshot_2-300x169.png" alt="SDRSharp" width="300" height="169" /></a>
-[/su_spoiler]
-[/su_accordion]
+{% gallery sdrsharper %}
 
-[su_accordion]
-[su_spoiler title="SDRSharper RTL TCP" style="fancy"]
-
-[gallery size="full" ids="298,346"]
-The configuration dialog for SDRSharper's driver is different from SDRSharp's. It doesn't offer the RTL AGC option, just a choice between manual gain and auto gain which seems to be for RF Gain. This time, the gain setting accepts any value via keyboard input. I prefered the slider, which lets you choose between the supported gain values your dongle has (see **rtl_test**). I'm not sure if this really lets you chose an arbitrary gain value. Another issue that bothers me is that this dialog will lose your settings every time you close SDRSharp(er)[/su_spoiler]
-[/su_accordion]
-
-[su_accordion class="do-not-open"]
-[su_spoiler title="rtl_test" style="fancy"]
+The configuration dialog for SDRSharper's driver is different from SDRSharp's. It doesn't offer the RTL AGC option, just a choice between manual gain and auto gain which seems to be for RF Gain. This time, the gain setting accepts any value via keyboard input. I prefered the slider, which lets you choose between the supported gain values your dongle has (see **rtl_test**). I'm not sure if this really lets you chose an arbitrary gain value. Another issue that bothers me is that this dialog will lose your settings every time you close SDRSharp(er)
 
 ```
 $ rtl_test
@@ -55,9 +50,6 @@ samples get lost. If you observe no further output, everything is fine.
 Reading samples in async mode...
 
 ```
-
-[/su_spoiler]
-[/su_accordion]
 
 SDRSharper looks a bit off in my opinion but overall it's not so bad. While SDRSharper's look is a bit off-throwing, the good news is that you can replace SDRSharp's version of SDRSharp.RTLTCP.dll with SDRSharper's. It works perfectly well except with the issues I detailed above. Beware, though, as licensing issues make it illegal to distribute SDRSharper.
 
