@@ -10,4 +10,4 @@ Here's one that shortens all your URLs using lower and upper case combinations o
 
 Suck it, <a href="http://xxxxxxxxxxxxxxxxxxxxxxxxx.xxx/xXxxXXxxxXXXxXxXXxXxXXxXXxXxXXXxXxXXxXXxxXxXXXXXxXXxxxxxXxxxxxXXxxXXXXxxxxxXxxXxXxXXxXxxxxXXXxXXXxXXXxxXxXXxxXxXxxXXXxXxXxxxXXXxXXXXxXXxXxXxxxXxxxXXxxXXXXxxxXxXXxXXxXXxxxXXXXxxxXXxXXXxXxXXXxxXXxxxxxXxxXXXxXxXXxxxxxxxxxxxxXXxXxxXXxxXXxxxXXXxxXxXxxXXXxxXxXxX">http://xxxxxxxxxxxxxxxxxxxxxxxxx.xxx/xXxxXXxxxXXXxXxXXxXxXXxXXxXxXXXxXxXXxXXxxXxXXXXXxXXxxxxxXxxxxxXXxxXXXXxxxxxXxxXxXxXXxXxxxxXXXxXXXxXXXxxXxXXxxXxXxxXXXxXxXxxxXXXxXXXXxXXxXxXxxxXxxxXXxxXXXXxxxXxXXxXXxXXxxxXXXXxxxXXxXXXxXxXXXxxXXxxxxxXxxXXXxXxXXxxxxxxxxxxxxXXxXxxXXxxXXxxxXXXxxXxXxxXXXxxXxXxX</a>.
 
-Update: This domain will expire on May 15, 2014. The fee for renewal is triple what I payed to register the domain, so I'm letting it go. RIP xlongener ;-(
+**Update: This domain will expire on May 15, 2014. The fee for renewal is triple what I payed to register the domain, so I'm letting it go. RIP xlongener ;-(**
