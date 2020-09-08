@@ -28,7 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_url: https://github.com/ticklemynausea
 linkedin_url: https://linkedin.com/in/mariocarneiro
 keybase_url: https://keybase.io/ticklemynausea
-pgp_public_key_fingerprint: 44f9bdfe477c18b9629a604cdd6bcf825657cbfd
+pgp_public_key_fingerprint: c8054ae0f178265c6d32bfb70c5f70dc17ec6ed4
 
 # Build settings
 plugins:
