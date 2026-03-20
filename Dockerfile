@@ -1,4 +1,4 @@
 FROM nginx
 COPY _site/ /usr/share/nginx/html/
-COPY default.conf /etc/nginx/conf.d/
+COPY nginx/default.conf /etc/nginx/conf.d/
 EXPOSE 80
