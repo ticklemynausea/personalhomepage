@@ -5,29 +5,34 @@ layout: default
 %div.home
   %header
     %h1
-      Hi, My name is Mário and I'm a Software Engineer
+      Hi, I'm Mário, a software engineer.
 
   %article
     %h2
-      I've worked on full-stack web development for most of my career.
+      I build web applications, front to back.
 
     %p
-      I have developed and worked on simple websites with and without backends, as well as web applications with intricate user experience and complex backend architectures.
+      Most of my career has been full-stack web development, from small websites to applications with intricate user experiences and complex backend architectures.
     %p
-      My preferred stack is a <mark>Ruby on Rails</mark> backend with a <mark>React</mark> frontend. I prefer working with the <mark>PostgreSQL</mark> database.
-    %p
-      I've written code in many other languages.
+      My preferred stack is a <mark>Ruby on Rails</mark> backend with a <mark>React</mark> frontend, on top of <mark>PostgreSQL</mark>. I've written code in plenty of other languages along the way.
 
   %article
     %h2
       I like building infrastructure and systems.
 
     %p
-      To support the websites and applications I have developed and worked on, I've used managed services, like <mark>Amazon Web Servies</mark> and <mark>Heroku</mark>. I have also managed my own services on bare hardware, having served applications and websites with my own installations of web servers and databases.
+      I've run applications on managed platforms like <mark>Amazon Web Services</mark> and <mark>Heroku</mark>, and on bare hardware with my own web servers and databases. I self-host my own services on <mark>Docker</mark> and <mark>nginx</mark>, and I build the tools I need to run them. When the trade-offs are acceptable, I prefer the simplicity of knowing exactly what's running and how.
+
+  %article
+    %h2
+      I still take things apart for fun.
+
+    %p
+      This blog started with software-defined radio, Raspberry Pis and Arduinos with Nokia screens. Lately it's ESP32s: I turned a <a href="/2026/10/19/a-graphing-calculator-as-an-ssh-terminal.html">TI Voyage 200 graphing calculator into an SSH terminal</a> by reverse engineering its link port. I also put my <a href="/2026/08/27/a-live-world-map-of-my-home-routers-connections.html">home router's live connections on a world map</a>. There's more on the <a href="/blog.html">blog</a>.
 
   %article
     %h2
       More about me
 
     %p
-      My detailed career and professional experience is available at my <a href="{{ site.linkedin_url }}">LinkedIn</a> profile. You can check out some of the personal projects I've worked on on my <a href="{{ site.github_url }}">GitHub</a>. You can reach me via <a href="mailto:{{ site.email }}">email</a>. If you would like to communicate securily, here's my <a href="{{ site.keybase_url }}/pgp_keys.asc?fingerprint={{ site.pgp_public_key_fingerprint}}">public key</a> (<span class="pre inline">{{ site.pgp_public_key_fingerprint | upcase}}</span>) and <a href="{{ site.keybase_url }}">Keybase</a> profile.
+      My detailed career and professional experience is on my <a href="{{ site.linkedin_url }}">LinkedIn</a> profile, and my personal projects are on <a href="{{ site.github_url }}">GitHub</a>. You can reach me by <a href="mailto:{{ site.email }}">email</a>. If you'd like to communicate securely, here's my <a href="{{ site.keybase_url }}/pgp_keys.asc?fingerprint={{ site.pgp_public_key_fingerprint}}">public key</a> (<span class="pre inline">{{ site.pgp_public_key_fingerprint | upcase}}</span>) and <a href="{{ site.keybase_url }}">Keybase</a> profile.
