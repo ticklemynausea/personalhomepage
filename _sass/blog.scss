@@ -41,6 +41,24 @@
         }
       }
     }
+
+    ol {
+      line-height: 1.25em;
+      list-style: decimal;
+      padding-left: 2em;
+
+      li {
+        margin: 0.5em 0 0.5em 0;
+      }
+    }
+
+    li ul {
+      margin-left: 1.5em;
+    }
+
+    ol li ul {
+      margin-left: 0;
+    }
   }
 
   .post--footer {
