@@ -17,6 +17,7 @@ gallery:
       - file: 6.jpeg
     classnames:
       - grid-2
+tags: [javascript, web, fractals]
 ---
 
 *Mandelbrot* is German for almond bread, hence the name. <a href="https://almondbread.ticklemynausea.net/">Almondbread</a> is a Mandelbrot set renderer that runs in the browser, on an HTML5 canvas. You can explore the set's endless detail until you hit the limits of JavaScript floating point numbers.

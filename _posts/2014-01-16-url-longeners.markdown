@@ -2,6 +2,7 @@
 layout: post
 title: URL longeners
 date: '2014-01-16 12:21:54 +0000'
+tags: [web, fun]
 ---
 
 The web is crawling with sites that shorten your URLs. However, if you want a site that makes an URL longer, you don't have much choice. Seems like people like to make urls shorter but don't care much for making them longer.

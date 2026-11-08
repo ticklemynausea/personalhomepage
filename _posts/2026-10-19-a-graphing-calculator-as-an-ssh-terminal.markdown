@@ -19,6 +19,7 @@ gallery:
       - file: cardputer-wireless.jpg
     classnames:
       - grid-1
+tags: [esp32, electronics, hardware, retro, ssh]
 ---
 
 The TI Voyage 200 is a graphing calculator from 2002 with a QWERTY keyboard, a 240x128 screen and a 2.5 mm link port meant for talking to other calculators and data loggers. A keyboard and a screen are most of what a terminal is, so I wanted to know if the link port could carry the rest. It can. The calculator now runs `ssh` sessions, `vim`, `tmux`, `irssi`, `htop` and even Claude Code, with no physical modifications to it.

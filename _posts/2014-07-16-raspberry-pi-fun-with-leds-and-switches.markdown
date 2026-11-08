@@ -2,6 +2,7 @@
 layout: post
 title: Raspberry PI - FUN with leds and switches
 date: '2014-07-16 16:39:48 +0100'
+tags: [raspberrypi, electronics, hardware]
 ---
 
 In the spirit of learning more about circuits and electronics I made a few experiments with my PI, a breadboard and a bunch of leds. Each led is directly controlled by a single GPIO pin.

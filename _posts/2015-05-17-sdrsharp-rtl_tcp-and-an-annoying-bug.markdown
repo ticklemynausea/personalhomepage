@@ -16,6 +16,7 @@ gallery:
       - file: rtltcp1.jpg
     classnames:
       - grid-2
+tags: [sdr, radio, raspberrypi, linux]
 ---
 
 rtl_tcp is a very convenient way to enjoy <a href="http://www.rtl-sdr.com/about-rtl-sdr/">rtl-sdr</a>. If your workstation isn't located anywhere near where you'd like to have your antenna, then you might consider connecting your dongle to a nearer machine and let your network handle the rest. My current setup has my Discone antenna on the other side of the house, connected to a dongle with a very short cable to cut signal losses and a USB cable all the way inside, connecting to my <a href="https://www.olimex.com/wiki/A20-OLinuXino-MICRO">Olimex Olinuxino A20 Micro</a>. Previously I used a Raspberry PI Model B and it also worked fine. So, boot up your low power machine, run rtl_tcp and connect to it using your software of choice. SDRSharp supports rtl_tcp out of the box with SDRSharp.RTLTCP.dll.

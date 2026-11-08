@@ -8,6 +8,7 @@ gallery:
       - file: conntrack.jpg
     classnames:
       - grid-1
+tags: [homelab, networking, mikrotik, ipv6, javascript]
 ---
 
 Back in 2014 I wrote about <a href="/2014/06/03/ipv6-home.html">setting up IPv6 at home</a>. These days a Mikrotik router sits at the edge of my network, and its connection tracking table knows about every flow that passes through it. A table is not a fun thing to stare at, so I put it on a map.

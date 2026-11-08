@@ -1,0 +1,8 @@
+{%- if include.tags.size > 0 -%}
+<ul class="tags" itemprop="keywords">
+  {%- for tag in include.tags -%}
+  {%- assign slug = tag | slugify -%}
+  <li><a href="{{ '/blog/tags/' | append: slug | append: '.html' | relative_url }}">#{{ tag | escape }}</a></li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

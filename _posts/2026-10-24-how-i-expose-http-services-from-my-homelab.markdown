@@ -2,6 +2,7 @@
 layout: post
 title: 'How I expose HTTP services from my homelab'
 date: '2026-10-24 04:00:00 +0100'
+tags: [homelab, selfhosting, networking, nginx, dns, docker, letsencrypt, fail2ban]
 ---
 
 My homelab runs about twenty web services across a few machines. A handful are public so I can share them with family, like Jellyfin. Most are private and only meant for me, like Nextcloud and Immich. I wanted every one of them to have:

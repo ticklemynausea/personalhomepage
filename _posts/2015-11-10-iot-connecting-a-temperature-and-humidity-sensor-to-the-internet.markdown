@@ -15,6 +15,7 @@ gallery:
     classnames:
       - grid-2
 
+tags: [arduino, esp8266, iot, electronics, hardware]
 ---
 
 Wonderful! I've now made a thing which is officially a part of the so-called "Internet of Things". It even has some practical use, I could argue! I connected a cheap <a href="http://files.amperka.ru/datasheets/dht11.pdf">DHT11</a> temperature/humidity sensor to an Arduino Nano and used the wonderful <a href="http://makezine.com/2015/04/01/esp8266-5-microcontroller-wi-fi-now-arduino-compatible/">ESP8266</a> (ESP-01) device to enable the Arduino to talk to the Internet, posting their readings on the <a href="https://thingspeak.com/">ThingSpeak</a> platform. They even let you make widgets with your charts and put them on your own site!

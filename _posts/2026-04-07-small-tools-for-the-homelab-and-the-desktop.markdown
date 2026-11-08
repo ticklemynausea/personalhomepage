@@ -2,6 +2,7 @@
 layout: post
 title: 'Small tools for the homelab and the desktop'
 date: '2026-04-07 20:00:00 +0100'
+tags: [homelab, docker, nginx, fail2ban, macos, tools]
 ---
 
 Not every project needs a post of its own. Here are some smaller ones from the past few months.

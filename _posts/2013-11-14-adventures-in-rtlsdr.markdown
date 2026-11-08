@@ -32,6 +32,7 @@ gallery:
 
 
 
+tags: [sdr, radio, hardware]
 ---
 
 A well known hack with DVB-T dongles based on the Realtek RTL2832U chip is that they may be used for more interesting purpose than watching the four free television channels we have here in Portugal: a really, really cheap software defined radio. This is known as *RTLSDR*.

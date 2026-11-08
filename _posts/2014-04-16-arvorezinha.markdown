@@ -18,6 +18,7 @@ gallery:
       file: arvorezinha-n100.png
     - title: N=500
       file: arvorezinha-n500.png
+tags: [programming, fun]
 ---
 
 *Arvorezinha* (meaning little tree in Portuguese) is a *hello world*-like trivial program which goal is to print a sequence of the same character (usually **\***) in each line in increasing length. It can be used as an introduction to looping constructs in arbitrary programming languages. For example, for n = 5 an *Arvorezinha* program would print out:

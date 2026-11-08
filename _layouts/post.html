@@ -11,6 +11,8 @@ layout: default
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
     </span>
+
+    {% include tags.html tags=page.tags %}
   </header>
 
   <div class="post--content" itemprop="articleBody">
