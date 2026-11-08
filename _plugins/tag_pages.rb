@@ -1,6 +1,8 @@
 module Jekyll
   # Generates one page per tag at /blog/tags/<tag>.html listing the posts
-  # with that tag, rendered with the blog layout.
+  # with that tag, rendered with the blog layout. Tags with a single post are
+  # kept out of search engines and the sitemap, as they add little over the
+  # post itself.
   class TagPage < Page
     def initialize(site, tag, posts)
       @site = site
@@ -15,6 +17,8 @@ module Jekyll
         "title" => "Posts tagged ##{tag}",
         "description" => "Posts by #{site.config["author"]} tagged ##{tag}.",
         "posts" => posts,
+        "noindex" => posts.size < 2,
+        "sitemap" => posts.size >= 2,
       }
     end
   end
