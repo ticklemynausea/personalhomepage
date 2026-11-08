@@ -13,6 +13,7 @@ module Jekyll
       self.data = {
         "layout" => "blog",
         "title" => "Posts tagged ##{tag}",
+        "description" => "Posts by #{site.config["author"]} tagged ##{tag}.",
         "posts" => posts,
       }
     end

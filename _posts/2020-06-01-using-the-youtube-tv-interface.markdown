@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using the Youtube TV interface after its 'retirement'
+description: "How to keep using the YouTube TV interface in a desktop browser after its retirement, with a small user agent spoofing browser extension."
 date: '2020-06-01 19:13:00 +0100'
 tags: [browser-extension, youtube, web]
 ---

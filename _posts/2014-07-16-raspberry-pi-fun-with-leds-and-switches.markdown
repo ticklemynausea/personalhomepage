@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Raspberry PI - FUN with leds and switches
+description: "Raspberry Pi experiments with a breadboard, LEDs driven directly from GPIO pins and a tactile switch."
 date: '2014-07-16 16:39:48 +0100'
 tags: [raspberrypi, electronics, hardware]
 ---

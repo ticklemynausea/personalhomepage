@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'PiFM: Raspberry PI as an FM radio transmitter'
+description: "Turning a Raspberry Pi into an FM radio transmitter with nothing but a piece of wire on a GPIO pin as the antenna."
 date: '2014-07-23 13:10:17 +0100'
 tags: [raspberrypi, radio, hardware]
 ---

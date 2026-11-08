@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Little Tree
+description: "Arvorezinha, a trivial program that prints a growing tree of asterisks, and the fun of implementing it in as many programming languages as possible."
 date: '2014-04-16 15:31:42 +0100'
 gallery:
     arvorezinhas:

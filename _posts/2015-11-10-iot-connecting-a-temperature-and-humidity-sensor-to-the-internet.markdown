@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'IoT: Connecting a temperature and humidity sensor to the Internet'
+description: "Connecting a DHT11 temperature and humidity sensor to the Internet with an Arduino Nano and an ESP8266, posting readings to ThingSpeak."
 date: '2015-11-10 19:21:21 +0000'
 gallery:
   wiring:

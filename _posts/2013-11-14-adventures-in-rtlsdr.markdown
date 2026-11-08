@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Adventures with Software Defined Radio
+description: "Using a cheap RTL2832U-based DVB-T dongle as a software defined radio, and building and mounting an antenna for it."
 date: '2013-11-14 16:17:33 +0000'
 gallery:
   packaged-antenna:

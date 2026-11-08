@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'How I expose HTTP services from my homelab'
+description: "How I give twenty self-hosted services nice HTTPS URLs while keeping the private ones unreachable from the internet, using split DNS, nginx and fail2ban."
 date: '2026-10-24 04:00:00 +0100'
 tags: [homelab, selfhosting, networking, nginx, dns, docker, letsencrypt, fail2ban]
 ---

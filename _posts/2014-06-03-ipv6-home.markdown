@@ -1,6 +1,7 @@
 ---
 layout: post
 title: IPv6 in your home via tunnel broker
+description: "A quick guide to getting IPv6 connectivity at home through a tunnel broker, using a Technicolor TG784n v3 router."
 date: '2014-06-03 00:48:18 +0100'
 gallery:
   wireshark:

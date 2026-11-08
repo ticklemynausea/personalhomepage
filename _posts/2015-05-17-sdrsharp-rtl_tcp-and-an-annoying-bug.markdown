@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SDRSharp, rtl_tcp and fixing a very annoying freeze bug
+description: "Running rtl_tcp on a small Linux board near the antenna, using it from SDRSharp over the network, and fixing its annoying freeze bug."
 date: '2015-05-17 14:29:53 +0100'
 gallery:
   setup:

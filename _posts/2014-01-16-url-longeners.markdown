@@ -1,6 +1,7 @@
 ---
 layout: post
 title: URL longeners
+description: "A URL lengthener that turns any link into a long string of upper and lower case Xs, with its source code."
 date: '2014-01-16 12:21:54 +0000'
 tags: [web, fun]
 ---

@@ -24,7 +24,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Mário Carneiro is a software engineer working on full-stack web development,
   infrastructure, and hardware tinkering on the side.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mariocarneiro.info" # the base hostname & protocol for your site, e.g. http://example.com
+author: Mário Carneiro
+social:
+  name: Mário Carneiro
+  links:
+    - https://github.com/ticklemynausea
+    - https://linkedin.com/in/mariocarneiro
+    - https://keybase.io/ticklemynausea
 github_url: https://github.com/ticklemynausea
 linkedin_url: https://linkedin.com/in/mariocarneiro
 keybase_url: https://keybase.io/ticklemynausea
@@ -33,6 +40,8 @@ pgp_public_key_fingerprint: 05a221be518f7a19cd26906b07b430c9ecc9dddb
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 header_pages:
   - cv.markdown
@@ -58,3 +67,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - nginx/
+  - Dockerfile
+  - import.rb

@@ -1,3 +1,5 @@
+require "cgi"
+
 module Jekyll
   class GalleryPlugin < Liquid::Tag
     attr_reader :context
@@ -16,19 +18,19 @@ module Jekyll
       <<~HTML
         <div class="#{classnamess}">
           #{if title then "<div class=\"gallery--title\"><h3>#{title}</h3></div>" else nil end}
-          #{render_items(items)}
+          #{render_items(items, title || context["page"]["title"])}
         </div>
       HTML
     end
 
-    def render_items(items)
+    def render_items(items, fallback_alt)
       content = items.map do |item|
         title = "<h4> #{item["title"]}</h4>" if item["title"]
 
         <<~HTML
           <div class="gallery--item">
             #{title}
-            #{gallery_item(item)}
+            #{gallery_item(item, fallback_alt)}
           </div>
         HTML
       end.join
@@ -46,7 +48,7 @@ module Jekyll
       context["page"]["gallery"][@markup.strip]
     end
 
-    def gallery_item(item)
+    def gallery_item(item, fallback_alt)
       url = "/#{post_url}/#{item["file"]}"
 
       case item["type"]
@@ -58,7 +60,7 @@ module Jekyll
       else
         <<~HTML
           <a href="#{url}">
-            <img src="#{url}" alt="#{item["title"]}" />
+            <img src="#{url}" alt="#{CGI.escapeHTML((item["title"] || fallback_alt).to_s)}" />
           </a>
         HTML
       end

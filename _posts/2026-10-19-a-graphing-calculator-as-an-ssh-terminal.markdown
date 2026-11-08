@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'A graphing calculator as an SSH terminal'
+description: "Turning a TI Voyage 200 graphing calculator into an SSH terminal with an ESP32 on its link port, running vim, tmux and even Claude Code."
 date: '2026-10-19 20:00:00 +0100'
 gallery:
   breadboard:

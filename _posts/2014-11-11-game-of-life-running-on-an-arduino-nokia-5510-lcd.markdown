@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Game of Life running on an Arduino + Nokia 5510 LCD
+description: "Conway's Game of Life running on an Arduino with a Nokia LCD, including the voltage dividers needed to drive a 3.3V screen from 5V outputs."
 date: '2014-11-11 23:59:01 +0000'
 tags: [arduino, electronics, hardware]
 ---

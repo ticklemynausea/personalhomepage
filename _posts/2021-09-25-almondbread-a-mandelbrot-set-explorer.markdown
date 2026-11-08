@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Almondbread: a Mandelbrot set explorer'
+description: "Almondbread is a Mandelbrot set explorer that runs in the browser on an HTML5 canvas, with mouse and keyboard zoom and colour palettes."
 date: '2021-09-25 20:00:00 +0100'
 gallery:
   overview:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A live world map of my home router's connections"
+description: "A web page that plots a Mikrotik router's live connection tracking table on a world map, using the RouterOS REST API with no backend."
 date: '2026-08-27 20:00:00 +0100'
 gallery:
   screenshot:

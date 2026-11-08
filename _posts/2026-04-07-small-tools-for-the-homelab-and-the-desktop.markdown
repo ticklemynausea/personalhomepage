@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Small tools for the homelab and the desktop'
+description: "Small tools from the past few months: netkill, docker-logtailer for fail2ban, an nginx SSH tunnel proxy and WindowPilot for macOS."
 date: '2026-04-07 20:00:00 +0100'
 tags: [homelab, docker, nginx, fail2ban, macos, tools]
 ---
