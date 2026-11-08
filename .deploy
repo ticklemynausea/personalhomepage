@@ -1,0 +1,4 @@
+ SSH_TARGET=mario@het.ticklemynausea.net
+ IMAGE_NAME=ticklemynausea/personalhomepage
+ REMOTE_DIR=vps-services
+ COMPOSE_FILE=personalhomepage/docker-compose.yml
