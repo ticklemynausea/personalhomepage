@@ -8,7 +8,6 @@ $background-color: $color1;
 $foreground-color: $color2;
 $title-color: $color3;
 $link-color: $color4;
-$hilight-color: $color5;
 $hr-color: lighten($color2, 70%);
 
 $font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -57,11 +56,6 @@ p {
 
 a {
   color: $link-color;
-}
-
-mark {
-  color: $hilight-color;
-  background: none;
 }
 
 pre {
